@@ -18,5 +18,5 @@ jobs:
       - name: Build
         uses: docker/build-push-action@v3
         with:
-          tags: domregfinder:latest
-          file: {context}/api/Dockerfile
+          tags: "domregfinder:latest"
+          file: ${{context}}/api/Dockerfile
