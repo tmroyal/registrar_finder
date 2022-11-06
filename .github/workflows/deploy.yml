@@ -9,5 +9,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: "echo"
-        run: echo "hello world"
+      - name: Smoke Test
+        run: echo "smoke test passed"
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      - name: Build
+        uses: docker/build-push-action@v3
+        with:
+          tags: domregfinder:latest
+          file: {context}/api/Dockerfile
