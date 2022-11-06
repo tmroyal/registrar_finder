@@ -1,0 +1,122 @@
+html, body {
+  background-color: #39384a;
+  height: 100%;
+  width: 100%;
+  color: #ece9f2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  background: rgb(58, 53, 59);
+  background: linear-gradient(-45deg, rgba(58,53,59,1) 0%, rgb(66, 66, 79) 100%);
+  padding-bottom: 4em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0 auto 0em auto;
+  padding-bottom: 0.5em;
+  font-weight: 1000;
+  font-size: 2.5em;
+  border-bottom: 1px solid white;
+}
+
+input {
+  width: 50%;
+  margin: 1em auto;
+  padding: 0.5em;
+  font-size: 1.4em;
+}
+
+img#loading {
+  width: 16px;
+  height: 16px;
+}
+
+header {
+  margin: 1em auto 2em;
+  padding-top: 5%;
+}
+
+header h1 {
+  display: inline-block;
+}
+
+header img { 
+  width: 3em;
+  margin-right: 1em;
+  vertical-align: top;
+}
+
+section {
+  margin: 0 auto;
+}
+
+#description {
+  font-style: italic;
+  font-size: 1em;
+  padding-bottom: 0.5em;
+}
+
+
+#description h2 {
+  display: inline;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+#description p {
+  display: inline;
+  font-size: 1em;
+}
+
+#loading {
+  display: inline-block;
+}
+
+#results {
+  width: 50%;
+  border-top: 1px solid #ece9f2;
+  margin-top: 2em;
+}
+
+#results h2 {
+  font-weight: bold;
+  padding-bottom: 0.5em;;
+  border-bottom: 1px solid #ece9f2;
+}
+
+#results p {
+  font-size: 1.4em;
+}
+
+#results p span {
+  color:#e8d7ee
+}
+
+@media screen and (max-width: 420px){
+  #results p {
+    font-size: 1em;
+  }
+}
+
+footer {
+  position:fixed;
+  bottom: 0;
+  font-size: 0.9em;
+}
+
+footer p {
+  padding: 0;
+  margin: 0.2em;
+}
+
+a, a:visited {
+  color:rgb(192, 172, 196);
+}
+
+a:hover, a:focus {
+  color:rgb(220, 210, 228);
+}
