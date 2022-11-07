@@ -9,8 +9,8 @@ on:
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: drf_royal
-  ECS_SERVICE: drf-service
-  ECS_CLUSTER: drf-royal
+  ECS_SERVICE: drf-v2
+  ECS_CLUSTER: drf-v2
   ECS_TASK_DEFINITION: .aws/ecstaskdef.json 
   CONTAINER_NAME: drf-app
 
