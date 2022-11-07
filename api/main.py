@@ -16,6 +16,12 @@ def format_result(message, code=200):
         "code": code
     }
 
+@app.route("/")
+def health():
+    return jsonify({
+        "health":"ok"
+    })
+
 @app.route("/domain")
 @cross_origin()
 def index():
