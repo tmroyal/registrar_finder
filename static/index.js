@@ -1,5 +1,5 @@
 (async function(){
-  const api_url = "http://api.domainregistrarfinder.com"
+  const api_url = "https://api.domainregistrarfinder.com"
   const WAIT_INTERVAL = 200;
   const domain_display = document.getElementById('domain');
   const registrar_display = document.getElementById('registrar');
