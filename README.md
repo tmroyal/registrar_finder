@@ -11,7 +11,4 @@ This site has the following infrastructure:
 - docker container deployment to ECS
 - Application Load Balancer with ACM Cert
 - Routes defined in Route 53
-<<<<<<< HEAD
 - HTTPS via CloudFront for s3
-=======
->>>>>>> 0461818a0cb917a67af7fe6616cab549b632b956
