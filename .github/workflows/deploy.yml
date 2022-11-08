@@ -66,3 +66,7 @@ jobs:
           service: ${{ env.ECS_SERVICE }}
           cluster: ${{ env.ECS_CLUSTER }}
           wait-for-service-stability: true
+
+      - name: Invalidate cloudfront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DIST_ID }} --paths "/index*"
